@@ -1,9 +1,10 @@
+import LeaguesList from "./components/leagues/leagues-list/LeaguesList"
 
 function App() {
-   return (
-    <>
-    Driblab prueba técnica
-    </>
+  return (
+    <div className="container">
+      <LeaguesList/>
+    </div>
   )
 }
 
