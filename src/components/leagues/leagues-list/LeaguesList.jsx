@@ -7,10 +7,9 @@ export default function LeaguesList() {
   const [leagues, setLeagues] = useState(null)
 
   useEffect(() => {
-    // leaguesService.list()
-    //   .then((res) => console.log(res))
-    //   .catch(console.error)
-    setLeagues(leaguesService.list())
+    leaguesService.list()
+      .then((competitions) => setLeagues(competitions))
+      .catch(console.error)
   }, []);
 
 
