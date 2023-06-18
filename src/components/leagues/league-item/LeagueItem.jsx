@@ -1,7 +1,8 @@
 import React from 'react'
 import './league-item.css'
+import { Link } from 'react-router-dom'
 
-export default function LeagueItem({ name, emblem }) {
+export default function LeagueItem({ id, name, emblem }) {
   return (
     <div className='league-item-container'>
       <h3>{name}</h3>
@@ -9,8 +10,9 @@ export default function LeagueItem({ name, emblem }) {
         <img src={emblem} alt="emblem" />
       </div>
       <div>
-        <button>Clasificación</button>
-        <button>Resultado</button>
+      {/* TODO: dar estilos a Link y quitar button */}
+        <button><Link to={`/${id}/standings`}>Clasificación</Link></button>
+        <button><Link to={`/${id}/matches-results`}>Partidos</Link></button>
       </div>
     </div>
   )
