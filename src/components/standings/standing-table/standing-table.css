@@ -1,0 +1,15 @@
+.standing-header {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 15rem));
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  border-bottom: 0.1rem solid gray;
+  width:fit-content;
+  padding-bottom: 0.4rem;
+}
+
+.team-numbers {
+  display: flex;
+  justify-content: space-between;
+}

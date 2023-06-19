@@ -11,7 +11,6 @@ const list = (id) => http.get(`/v4/competitions/${id}/matches`)
 
       return _groupedMatches;
     }, [])
-    console.log(groupedMatches);
     return groupedMatches
   })
 
