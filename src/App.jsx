@@ -1,17 +1,20 @@
 import { Routes, Route } from "react-router-dom"
-import LeaguesList from "./components/leagues/leagues-list/LeaguesList"
-import StandingTable from "./components/standings/standing-table/StandingTable"
-import DailyMatchesList from "./components/matches-results/daily-matches-list/DailyMatchesList"
+import LeaguesContextProvider from "./contexts/LeaguesContextProvider"
+import HomePage from "./components/pages/HomePage"
+import StandingsPage from "./components/pages/StandingsPage"
+import MatchdaysPage from "./components/pages/MatchdaysPage"
 
 function App() {
   return (
-    <div className="container">
-      <Routes>
-        <Route path="/" element={<LeaguesList />} />
-        <Route path="/:leagueId/standings" element={<StandingTable />} />
-        <Route path="/:leagueId/matches-results" element={<DailyMatchesList />} />
-      </Routes>
-    </div>
+    <>
+      <LeaguesContextProvider>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/:leagueId/standings" element={<StandingsPage />} />
+          <Route path="/:leagueId/matchdays" element={<MatchdaysPage />} />
+        </Routes>
+      </LeaguesContextProvider>
+    </>
   )
 }
 
