@@ -1,16 +1,10 @@
-import React, { useEffect, useState } from 'react';
 import './leagues-list.css';
-import leaguesService from '../../../services/leagues';
+import React, { useContext } from 'react';
+import { LeaguesContext } from '../../../contexts/LeaguesContextProvider';
 import LeagueItem from '../league-item/LeagueItem';
 
 export default function LeaguesList() {
-  const [leagues, setLeagues] = useState(null)
-
-  useEffect(() => {
-    leaguesService.list()
-      .then((competitions) => setLeagues(competitions))
-      .catch(console.error)
-  }, []);
+  const { leagues } = useContext(LeaguesContext)
 
   return (
     <>
@@ -19,7 +13,7 @@ export default function LeaguesList() {
           <h1>LIGAS</h1>
           <div className='leagues-container'>
             {leagues.map((competition) => (
-              <LeagueItem key={competition.id} id={competition.id} name={competition.name} emblem={competition.emblem} />
+              <LeagueItem key={competition.id} {...competition} />
             ))}
           </div>
         </>
