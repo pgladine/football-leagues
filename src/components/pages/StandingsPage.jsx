@@ -4,8 +4,9 @@ import StandingTable from "../standings/standing-table/StandingTable"
 export default function StandingsPage() {
   return (
     <div>
-      <PageLayout/>
-      <StandingTable/>
+      <PageLayout>
+        <StandingTable />
+      </PageLayout>
     </div>
   )
 }

@@ -1,0 +1,17 @@
+.layout-rows {
+  display: grid;
+  grid-template-rows: 6rem auto;
+}
+
+.layout-columns {
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
+}
+
+.layout-background {
+  background-color: #2c4268ff;
+}
+.page-container {
+  display: flex;
+  justify-content: center;
+}

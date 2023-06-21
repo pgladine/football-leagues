@@ -13,13 +13,12 @@ export default function MatchdayList() {
       .catch(console.error)
   }, [leagueId]);
 
-  // TODO: cambiar la key del map para no utilizar el índice
   return (
-    <>
+    <section>
       {!groupedMatches ? (<div>Loading...</div>) : (
-        groupedMatches.map((matchGroup, i) => <Matchday key={i} matchGroup={matchGroup} />)
+        groupedMatches.map((matchGroup, i) => <Matchday key={i} matchGroup={matchGroup} matchday={i + 1} />)
       )
       }
-    </>
+    </section>
   )
 }

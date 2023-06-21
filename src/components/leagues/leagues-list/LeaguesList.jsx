@@ -7,10 +7,9 @@ export default function LeaguesList() {
   const { leagues } = useContext(LeaguesContext)
 
   return (
-    <>
+    <section>
       {!leagues ? (<div>Loading...</div>) : (
         <>
-          <h1>LIGAS</h1>
           <div className='leagues-container'>
             {leagues.map((competition) => (
               <LeagueItem key={competition.id} {...competition} />
@@ -18,6 +17,6 @@ export default function LeaguesList() {
           </div>
         </>
       )}
-    </>
+    </section>
   )
 }

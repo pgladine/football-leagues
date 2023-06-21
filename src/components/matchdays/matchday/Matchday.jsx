@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from 'react';
 import Match from '../match/Match';
 import './matchday.css'
 
 
-export default function Matchday({ matchGroup }) {
+export default function Matchday({ matchGroup, matchday }) {
 
   return (
     <div className='matchday-container'>
       <h3>
-        Jornada: {matchGroup[0].matchday}
+        Jornada: {matchday}
       </h3>
       {matchGroup.map((match) => {
         return <Match key={match.matchId} {...match} />

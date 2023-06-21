@@ -15,7 +15,7 @@ export default function StandingTable() {
   }, [leagueId]);
 
   return (
-    <>
+    <section>
       {!standing ? (<div>Loading...</div>) : (
         <>
           <div className='standing-header'>
@@ -31,10 +31,10 @@ export default function StandingTable() {
             </div>
           </div>
           {standing.map((teamData) => (
-            <StandingRow key={teamData.tId} {...teamData} />
+            <StandingRow key={teamData.teamId} {...teamData} />
           ))}
         </>
       )}
-    </>
+    </section>
   )
 }
