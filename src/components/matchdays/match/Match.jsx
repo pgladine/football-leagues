@@ -9,7 +9,7 @@ export default function Match({ homeCrest, homeName, homeScore, awayCrest, awayN
           <img src={homeCrest} alt={homeName} />
           <span>{homeName}</span>
         </div>
-        <div>{homeScore} - {awayScore}</div>
+        <div className='score'>{homeScore} - {awayScore}</div>
         <div className='awayTeam-info'>
           <span>{awayName}</span>
           <img src={awayCrest} alt={awayName} />

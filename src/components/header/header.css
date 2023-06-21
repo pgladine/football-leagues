@@ -1,9 +1,24 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  border: solid 1px white;
+  background-color: #ebebebff;
+  padding: 0rem 2rem;
+}
+.header-link {
+  text-decoration: none;
+  color: #2c4268ff;
+}
+
+.header-league {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #2c4268ff;
+  width: 25rem;
 }
 
 .header img {
-  width: 2rem;
+  width: 3rem;
 }

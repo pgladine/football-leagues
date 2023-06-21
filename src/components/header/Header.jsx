@@ -15,8 +15,8 @@ export default function Header() {
 
   return (
     <div className='header'>
-      <Link to={'/'}><h1>Consulta la temporada 2023</h1></Link>
-      <div className='header'>
+      <Link className='header-link' to={'/'}><h1>Ligas 2022-2023</h1></Link>
+      <div className='header-league'>
         {selectedLeague &&
           <>
             <p>{selectedLeague?.name}</p>

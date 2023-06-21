@@ -1,19 +1,25 @@
 .league-item-container {
   width: 20rem;
   height: 20rem;
-  border: 0.25rem solid black;
+  box-shadow: 3px 2px 5px gray;
   border-radius: 2rem;
   margin: 1rem;
   text-align: center;
   line-height: 4rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: white;
+  color: black;
 }
 
 .img-frame {
   width: 10rem;
   height: 10rem;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
 }
 
 .league-item-container img {
@@ -21,4 +27,6 @@
   height: auto;
 }
 
-
+.buttons-container {
+  display: flex;
+}
