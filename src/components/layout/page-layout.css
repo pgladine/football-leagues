@@ -5,7 +5,7 @@
 
 .layout-columns {
   display: grid;
-  grid-template-columns: 2fr 8fr 2fr;
+  grid-template-columns: auto;
 }
 
 .layout-background {
@@ -14,4 +14,11 @@
 .page-container {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .layout-columns {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+  }
 }

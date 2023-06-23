@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   border-bottom: 0.1rem solid gray;
-  width:fit-content;
+  width: fit-content;
   color: white;
   padding: 0.4rem 0 0.4rem 0.1rem;
 }
@@ -14,7 +14,7 @@
 }
 
 .standing-container:hover {
-  background-color: #6d6b6b ;
+  background-color: #6d6b6b;
 }
 
 .home-team-info {
@@ -22,10 +22,27 @@
   justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   margin-left: 0.4rem;
 }
 
 .standing-container img {
-  width: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .home-team-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    margin-left: 0.4rem;
+  }
+
+  .standing-container img {
+    width: 2rem;
+    height: 2rem;
+  }
 }

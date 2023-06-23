@@ -1,6 +1,7 @@
 .standing-table-container {
   color: white;
-  margin-top: 2rem;
+  font-size: 0.8rem;
+  padding: 1rem;
 }
 
 .standing-table-container > p {
@@ -34,5 +35,14 @@
 .total-points {
   font-weight: bolder;
   color: antiquewhite;
+}
+
+@media (min-width: 768px) {
+  .standing-table-container {
+    color: white;
+    margin-top: 2rem;
+    font-size: 1rem;
+    padding: 0rem;
+  }
 }
 
