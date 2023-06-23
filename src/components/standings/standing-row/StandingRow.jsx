@@ -3,7 +3,7 @@ import './standing-row.css'
 
 export default function StandingRow({ position, teamCrest, teamName, points, playedGames, won, draw, lost, goalsFor, goalsAgainst }) {
   return (
-    <div className='standing-container'>
+    <div className='standing-container' data-testid="standing-row">
       <div className='home-team-info'>
         <span>{position}</span>
         <img src={teamCrest} alt="escudo" />

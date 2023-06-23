@@ -18,10 +18,10 @@ export default function StandingTable() {
   return (
     <section>
       {!standing ? (<Loader />) : (
-          <>
+        <>
           {standing.map((leagueGroup, i) => (
             <div className='standing-table-container' key={i}>
-              {leagueGroup[0] && <p>{leagueGroup[0]}</p>}
+              {leagueGroup[0] && <p>GRUPO {leagueGroup[0]}</p>}
               <div className='standing-header' data-testid='standing-list-header'>
                 <p>EQUIPOS</p>
                 <div className='team-numbers'>
@@ -39,8 +39,8 @@ export default function StandingTable() {
               ))}
             </div>
           ))}
-          </>
-        )
+        </>
+      )
       }
     </section>
   )

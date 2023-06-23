@@ -25,3 +25,5 @@ dist-ssr
 
 .env
 .vscode
+data-abbreviated.js
+cup-standings.js

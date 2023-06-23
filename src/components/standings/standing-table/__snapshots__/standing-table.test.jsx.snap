@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<StandingTable/> > should render <Loader/> when standing is null  1`] = `
+<body>
+  <div>
+    <section>
+      <div
+        class="box"
+        data-testid="loader"
+      >
+        <div
+          class="shadow"
+        />
+        <div
+          class="gravity"
+        >
+          <div
+            class="ball"
+          />
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+`;

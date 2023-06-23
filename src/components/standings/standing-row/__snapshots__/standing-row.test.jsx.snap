@@ -1,0 +1,54 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<StandingRow/> > should render the data with the right props 1`] = `
+<body>
+  <div>
+    <div
+      class="standing-container"
+      data-testid="standing-row"
+    >
+      <div
+        class="home-team-info"
+      >
+        <span>
+          1
+        </span>
+        <img
+          alt="escudo"
+          src="https://teamCrest.url"
+        />
+        <span>
+          teamName
+        </span>
+      </div>
+      <div
+        class="team-numbers"
+      >
+        <span
+          class="total-points"
+        >
+          15
+        </span>
+        <span>
+          6
+        </span>
+        <span>
+          5
+        </span>
+        <span>
+          0
+        </span>
+        <span>
+          1
+        </span>
+        <span>
+          20
+        </span>
+        <span>
+          6
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
