@@ -3,23 +3,21 @@
 exports[`<StandingTable/> > should render <Loader/> when standing is null  1`] = `
 <body>
   <div>
-    <section>
+    <div
+      class="box"
+      data-testid="loader"
+    >
       <div
-        class="box"
-        data-testid="loader"
+        class="shadow"
+      />
+      <div
+        class="gravity"
       >
         <div
-          class="shadow"
+          class="ball"
         />
-        <div
-          class="gravity"
-        >
-          <div
-            class="ball"
-          />
-        </div>
       </div>
-    </section>
+    </div>
   </div>
 </body>
 `;
