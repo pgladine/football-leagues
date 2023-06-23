@@ -1,6 +1,6 @@
 .layout-rows {
   display: grid;
-  grid-template-rows: 6rem auto;
+  grid-template-rows: 12rem auto;
 }
 
 .layout-columns {
@@ -9,7 +9,7 @@
 }
 
 .layout-background {
-  background-color: #2c4268ff;
+  background-color: rgb(42, 41, 41);
 }
 .page-container {
   display: flex;

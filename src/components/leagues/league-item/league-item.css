@@ -5,28 +5,58 @@
   border-radius: 2rem;
   margin: 1rem;
   text-align: center;
-  line-height: 4rem;
+  line-height: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #e6e6e6;
   color: black;
+  position: relative;
+}
+
+.league-item-container > p {
+  font-size: 1.3rem;
+  font-weight: lighter;
 }
 
 .img-frame {
-  width: 10rem;
-  height: 10rem;
-  /* border: 1px solid black; */
+  width: 8rem;
+  height: 8rem;
   display: flex;
   justify-content: center;
 }
 
-.league-item-container img {
-  width: 10rem;
+.img-frame img {
+  width: 8rem;
   height: auto;
 }
 
+.cup {
+  width: 3rem;
+  height: auto;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #e6e6e6;
+  box-shadow: 3px 2px 5px gray;
+  border-radius: 2rem;
+}
+
+.country-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.country-frame img {
+  width: 1.5rem;
+  height: 1.5rem;
+  height: auto;
+  }
+
 .buttons-container {
   display: flex;
+  margin-top: 1.5rem;
 }

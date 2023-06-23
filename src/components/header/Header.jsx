@@ -15,15 +15,14 @@ export default function Header() {
 
   return (
     <div className='header'>
-      <Link className='header-link' to={'/'}><h1>Ligas 2022-2023</h1></Link>
-      <div className='header-league'>
-        {selectedLeague &&
-          <>
-            <p>{selectedLeague?.name}</p>
-            <img src={selectedLeague?.emblem} alt={selectedLeague?.name} />
-          </>
-        }
-      </div>
+      <Link className='header-link' to={'/'}><h1>Competiciones</h1></Link>
+      {selectedLeague &&
+        <div className='header-league'>
+        {selectedLeague.type === 'CUP' && <img src='/black-cup.png' alt='COPA' />}
+          <p>{selectedLeague?.name}</p>
+          <img src={selectedLeague?.emblem} alt={selectedLeague?.name} />
+        </div>
+      }
     </div>
   )
 }

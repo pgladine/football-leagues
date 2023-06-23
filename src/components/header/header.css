@@ -1,22 +1,50 @@
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border: solid 1px white;
-  background-color: #ebebebff;
-  padding: 0rem 2rem;
+  background-image: url("https://depor.com/resizer/mNZ5onnmHzjKnullkFudg3KWsxM=/640x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/UYXAAWLGOREOJCFBA44YJ5GOKM.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-blend-mode: difference;
+  background-size: cover;
+  padding: 0 4rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(42, 41, 41, 0.5);
+}
+
 .header-link {
   text-decoration: none;
-  color: #2c4268ff;
+  position: relative;
+  text-shadow: 3px 3px 6px #215593;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  font-family: monospace, Arial, Helvetica, sans-serif;
 }
 
 .header-league {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: #2c4268ff;
+  color: black;
   width: 25rem;
+  font-weight: bold;
+  position: relative;
+  background-color: rgb(235, 229, 229);
+  border-radius: 3rem 2rem;
+  opacity: 0.65;
+  padding: 0.2rem;
 }
 
 .header img {
