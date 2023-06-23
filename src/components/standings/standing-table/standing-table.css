@@ -1,16 +1,37 @@
+.standing-table-container {
+  color: white;
+  margin-top: 2rem;
+}
+
+.standing-table-container > p {
+  font-weight: bold;
+  text-align: center;
+}
+
 .standing-header {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 15rem));
+  grid-template-columns: repeat(2, minmax(0, 21rem));
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  border-bottom: 0.1rem solid gray;
-  width:fit-content;
+  margin-top: 1.5rem;
+  border-bottom: 0.2rem solid red;
+  width: fit-content;
   padding-bottom: 0.4rem;
-  color: white;
+}
+
+.standing-header > p {
+  font-weight: bold;
 }
 
 .team-numbers {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(7, minmax(0, 10rem));
+  text-align: center;
+}
+
+.total-points {
+  font-weight: bolder;
+  color: antiquewhite;
 }

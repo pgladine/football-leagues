@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import matchesService from '../../../services/matches';
 import Matchday from '../matchday/Matchday';
+import Loader from '../../loader/Loader';
 
 export default function MatchdayList() {
   const [groupedMatches, setGroupedMatches] = useState(null)
@@ -15,7 +16,7 @@ export default function MatchdayList() {
 
   return (
     <section>
-      {!groupedMatches ? (<div>Loading...</div>) : (
+      {!groupedMatches ? (<Loader />) : (
         groupedMatches.map((matchGroup, i) => <Matchday key={i} matchGroup={matchGroup} matchday={i + 1} />)
       )
       }
