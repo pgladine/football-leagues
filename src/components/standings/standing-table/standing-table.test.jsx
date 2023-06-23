@@ -64,7 +64,6 @@ describe('<StandingTable/>', () => {
 
     expect(standingsServiceListMock).toHaveBeenCalledTimes(1);
     expect(await screen.findByTestId('standing-list-header')).toBeInTheDocument();
-    // TODO ver que pinta 2 filas
     expect((await screen.findAllByTestId('standing-row')).length).toEqual(2)
   })
 })
